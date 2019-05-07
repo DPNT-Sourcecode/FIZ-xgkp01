@@ -4,8 +4,12 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class SumSolution {
 
-    public int compute(int x, int y) {
-        throw new SolutionNotImplementedException();
+    //Method to compute the sum of two integer values
+	public Integer compute(Integer x, Integer y) { throw new SolutionNotImplementedException()
+    	
+    	return (x + y);
+        
     }
 
 }
+
