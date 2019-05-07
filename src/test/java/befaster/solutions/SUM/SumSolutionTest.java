@@ -9,7 +9,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 public class SumSolutionTest {
-    private SumSolution sum;
+    
+	private SumSolution sum;
 
     @Before
     public void setUp() {
@@ -42,4 +43,5 @@ public class SumSolutionTest {
     
     
 }
+
 
