@@ -1,9 +1,12 @@
 package befaster.solutions.HLO;
 
-import befaster.runner.SolutionNotImplementedException;
 
 public class HelloSolution {
-    public String hello(String friendName) {
-        throw new SolutionNotImplementedException();
+   
+	//This function takes a String parameter and returns the friend name passed to the function.
+	public String hello(String friendName) {
+        
+    	return friendName;
     }
 }
+
