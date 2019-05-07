@@ -1,6 +1,7 @@
 package befaster.solutions.SUM;
 
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -32,17 +33,17 @@ public class SumSolutionTest {
     	
     }
     
-    //Checking if the values are not null 
+    //Checking if null is passed, the return value is null
     @Test
     public void testSumNull() {
        
-    	assertNull(sum.compute(1, null))
+    	assertNull(sum.compute(1, null));
     	
     }
     
     
-    
 }
+
 
 
 
