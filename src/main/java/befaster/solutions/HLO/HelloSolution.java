@@ -10,12 +10,22 @@ public class HelloSolution {
 	    String friendNameStr = greeting.concat(friendName);
 		String concatStr = friendNameStr.concat("!");
 				
-	    return concatStr;
+	    
+		return concatStr;
+	    
+	    
     	
 	}
 	
+	public static void main(String args[])
+	{
+		String greeting = "Hello, ";
+	    String friendNameStr = greeting.concat("John");
+		String concatStr = friendNameStr.concat("!");
+		System.out.println(concatStr);
+		
+	}
+	
+	
+	
 }
-
-
-
-
