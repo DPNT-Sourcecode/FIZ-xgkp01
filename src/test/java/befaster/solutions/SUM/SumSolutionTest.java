@@ -36,12 +36,13 @@ public class SumSolutionTest {
     @Test
     public void testSumNull() {
        
-    	assertNotEquals(sum.compute(1, null), String.valueOf(2));
+    	assertNull(sum.compute(1, null))
     	
     }
     
     
     
 }
+
 
 
