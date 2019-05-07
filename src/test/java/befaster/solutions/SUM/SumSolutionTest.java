@@ -33,17 +33,8 @@ public class SumSolutionTest {
     	
     }
     
-    //Checking if null is passed, the return value is null
-    @Test
-    public void testSumSpace() {
-       
-    	
-    	assertNotEquals(sum.compute(new Integer("1"), new Integer("")), String.valueOf(2));
-    	
-    }
-    
-    
 }
+
 
 
 
