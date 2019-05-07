@@ -7,13 +7,15 @@ public class HelloSolution {
 	public String hello(String friendName) {
         
 		String greeting = "Hello, ";
-	    String concatStr = greeting.concat(friendName);
-		
+	    String friendNameStr = greeting.concat(friendName);
+		String concatStr = friendNameStr.concat("!");
+				
 	    return concatStr;
     	
 	}
 	
 }
+
 
 
 
