@@ -43,7 +43,6 @@ public class FizzBuzzSolution {
     	}
         
         
-        
         if (!isThreeorFive) {
 				
 			result = number.toString();
@@ -116,6 +115,7 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
 
 
