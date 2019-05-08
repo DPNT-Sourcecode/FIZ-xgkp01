@@ -2,12 +2,6 @@ package befaster.solutions.FIZ;
 
 public class FizzBuzzSolution {
 	
-	/*
-	  - A number is "fizz" if it is divisible by 3 or if it has a 3 in it
-	  - A number is "buzz" if it is divisible by 5 or if it has a 5 in it
-	  - A number can be both "fizz" and "buzz" at the same time. If this happens then write "fizz buzz"
-	  */
-	
 	public String fizzBuzz(Integer number) {
 		
 		String result = "";
@@ -106,4 +100,5 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
