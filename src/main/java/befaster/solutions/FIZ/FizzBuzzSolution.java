@@ -71,31 +71,31 @@ public class FizzBuzzSolution {
 	}
 	
 	//Method to return the result for deluxe fizz buzz
-	private StringBuffer getDlxFizzBuzzResult(Integer number, StringBuffer valResult, boolean isDeluxe, 
-			                            boolean containsThree, boolean containsFive) {
+	private StringBuffer getDlxFizzBuzzResult(Integer number, StringBuffer valResult,
+			                                  boolean containsThree, boolean containsFive) {
 		
 		StringBuffer result = valResult; 
 		
 		if (number % 3 == 0 && number % 5 == 0) {
 	        	
-        	result = getResult(isDeluxe);
+        	result = getResult(valResult);
 	    }
 	        
         if (number % 3 == 0 && containsFive) {
         	
-        	result = getResult(isDeluxe);
+        	result = getResult(valResult);
         }
         
         	
         if (number % 5 == 0 && containsThree) {
         	
-        	result = getResult(isDeluxe);
+        	result = getResult(valResult);
         }	
         
         
         if (containsThree && containsFive) {
     		
-        	result = getResult(isDeluxe);
+        	result = getResult(valResult);
     		
     	}
 	     
@@ -104,18 +104,11 @@ public class FizzBuzzSolution {
 	}
 	
 	//Method to return "fizz buzz" or "fizz buzz deluxe"
-	private String getResult(boolean isDeluxe) {
+	private StringBuffer getResult(StringBuffer valResult) {
 		
-		String result = "";
+		StringBuffer result = new StringBuffer("fizz buzz");
 		
-		if (isDeluxe) {
-			
-			result = "fizz buzz deluxe";
-		} 
-		else {
-			
-			result = "fizz buzz";
-		}
+		result.append(valResult);
 		
 		return result;
 
@@ -210,3 +203,4 @@ public class FizzBuzzSolution {
     */
 
 }
+
