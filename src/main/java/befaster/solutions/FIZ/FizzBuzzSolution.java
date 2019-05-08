@@ -8,6 +8,8 @@ public class FizzBuzzSolution {
 		
 		String numVal = number.toString();
 		
+		boolean isThreeorFive = false;
+		
 		
 		boolean containsThree = containsThreeOrFive(numVal, '3');
 		boolean containsFive = containsThreeOrFive(numVal, '5');
@@ -16,12 +18,14 @@ public class FizzBuzzSolution {
         if ((number % 3 == 0) || (containsThree)) {
     		
     		result = "fizz";
+    		isThreeorFive = true;
     	
         }
         
         else if ((number % 5 == 0) || (containsFive)) {
     		
     		result = "buzz";
+    		isThreeorFive = true;
     	
         }
         
@@ -31,10 +35,15 @@ public class FizzBuzzSolution {
     		result = "fizz buzz";
     		
     	}
-		
+        else {
+    		
+			if (!isThreeorFive) {
+				
+				result = number.toString();
+			}
+        }
 		
 		return result;
-		
 		
 	}
 	
@@ -100,5 +109,6 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
 
