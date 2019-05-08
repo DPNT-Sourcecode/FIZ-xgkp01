@@ -30,7 +30,7 @@ public class FizzBuzzSolution {
         }
         
         if ((number % 3 == 0 && number % 5 == 0) ||
-        	 (containsThree && containsFive)) {
+        	 (containsThree || containsFive)) {
     		
     		result = "fizz buzz";
     		
@@ -109,6 +109,3 @@ public class FizzBuzzSolution {
     */
 
 }
-
-
-
