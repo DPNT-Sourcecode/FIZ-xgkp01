@@ -24,11 +24,13 @@ public class FizzBuzzSolution {
 			if (number % 2 != 0) {
 				
 				deluxeResult.append(" fake deluxe");
+				singleValResult.append("fake deluxe");
 				
 			} 
 			else {
 				
 				deluxeResult.append(" deluxe");
+				singleValResult.append("deluxe");
 			}
 			
 			isSingleVal = true;
@@ -37,6 +39,7 @@ public class FizzBuzzSolution {
 		
         if ((number % 3 == 0) || (containsThree)) {
     		
+        	singleValResult = new StringBuffer("");
         	singleValResult.append("fizz");
         	singleValResult.append(deluxeResult);
         	
@@ -46,6 +49,7 @@ public class FizzBuzzSolution {
         
         else if ((number % 5 == 0) || (containsFive)) {
     		
+        	singleValResult = new StringBuffer("");
         	singleValResult.append("buzz");
         	singleValResult.append(deluxeResult);
         	
@@ -197,4 +201,5 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
