@@ -5,10 +5,12 @@ public class FizzBuzzSolution {
 	public String fizzBuzz(Integer number) {
 		
 		String result = "";
+		String singleValResult = "";
 		
 		String numVal = number.toString();
 		
 		boolean isSingleVal = false;
+		
 		
 		boolean isDeluxe = false;
 		
@@ -20,7 +22,7 @@ public class FizzBuzzSolution {
 		//Deluxe logic to check if the number is greater than 10 and all have identical values
 		if (number > 10 && isIdentical(numVal)) {
 			
-			result = "deluxe";
+			singleValResult = "deluxe";
 			isDeluxe = true;
 			isSingleVal = true;
 		}
@@ -28,19 +30,19 @@ public class FizzBuzzSolution {
 		
         if ((number % 3 == 0) || (containsThree)) {
     		
-    		result = "fizz";
+        	singleValResult = "fizz";
     		isSingleVal = true;
     	
         }
         
         else if ((number % 5 == 0) || (containsFive)) {
     		
-    		result = "buzz";
+        	singleValResult = "buzz";
     		isSingleVal = true;
     	
         }
         
-        result = getDlxFizzBuzzResult(number, isDeluxe, containsThree, containsFive);
+        result = getDlxFizzBuzzResult(number, singleValResult, isDeluxe, containsThree, containsFive);
         
         //To return the number itself
         if (!isSingleVal) {
@@ -52,10 +54,10 @@ public class FizzBuzzSolution {
 	}
 	
 	//Method to return the result for deluxe fizz buzz
-	private String getDlxFizzBuzzResult(Integer number, boolean isDeluxe, 
+	private String getDlxFizzBuzzResult(Integer number, String singleValResult, boolean isDeluxe, 
 			                            boolean containsThree, boolean containsFive) {
 		
-		String result = ""; 
+		String result = singleValResult; 
 		
 		if (number % 3 == 0 && number % 5 == 0) {
 	        	
@@ -191,4 +193,5 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
