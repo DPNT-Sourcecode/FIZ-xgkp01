@@ -17,25 +17,27 @@ public class FizzBuzzSolution {
 		boolean containsFive = containsThreeOrFive(numVal, '5');
 		
 		
-		//Deluxe logic to check if the number is greater than 10 and all have identical values
-		if (number > 10 && isIdentical(numVal)) {
-			
+		//Deluxe logic to check if the number is divisible by 3 AND contains a 3 or
+		//is divisible by 5 AND contains a 5
+		
+		if (((number % 3 == 0) && (containsThree)) ||
+		    ((number % 5 == 0) && (containsFive))) {	
 			
 			if (number % 2 != 0) {
-				
+							
 				deluxeResult.append(" fake deluxe");
 				singleValResult.append("fake deluxe");
 				
-			} 
-			else {
+			 } 
+			 else {
 				
-				deluxeResult.append(" deluxe");
+			    deluxeResult.append(" deluxe");
 				singleValResult.append("deluxe");
 			}
 			
 			isSingleVal = true;
+			
 		}
-		
 		
         if ((number % 3 == 0) || (containsThree)) {
     		
@@ -201,3 +203,4 @@ public class FizzBuzzSolution {
     */
 
 }
+
