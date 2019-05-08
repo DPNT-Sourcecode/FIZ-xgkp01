@@ -31,6 +31,12 @@ public class FizzBuzzSolution {
         if ((number % 3 == 0) || (containsThree)) {
     		
         	singleValResult = "fizz";
+        	
+        	if (isDeluxe) {
+        	
+        		singleValResult = "fizz deluxe";
+        	}
+        	
     		isSingleVal = true;
     	
         }
@@ -38,7 +44,13 @@ public class FizzBuzzSolution {
         else if ((number % 5 == 0) || (containsFive)) {
     		
         	singleValResult = "buzz";
-    		isSingleVal = true;
+    		
+        	if (isDeluxe) {
+            	
+        		singleValResult = "buzz deluxe";
+        	}
+        	
+        	isSingleVal = true;
     	
         }
         
@@ -193,5 +205,6 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
 
