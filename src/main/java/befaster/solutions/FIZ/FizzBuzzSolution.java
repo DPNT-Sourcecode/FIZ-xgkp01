@@ -20,10 +20,10 @@ public class FizzBuzzSolution {
 		//Deluxe logic to check if the number is greater than 10 and all have identical values
 		if (number > 10 && isIdentical(numVal)) {
 			
+			result = "deluxe";
 			isDeluxe = true;
 			isSingleVal = true;
 		}
-		
 		
 		
         if ((number % 3 == 0) || (containsThree)) {
@@ -191,3 +191,4 @@ public class FizzBuzzSolution {
     */
 
 }
+
