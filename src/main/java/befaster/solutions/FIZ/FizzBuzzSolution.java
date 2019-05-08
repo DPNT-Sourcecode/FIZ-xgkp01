@@ -8,7 +8,7 @@ public class FizzBuzzSolution {
 		
 		String numVal = number.toString();
 		
-		boolean isThreeorFive = false;
+		boolean isSingleVal = false;
 		
 		boolean isDeluxe = false;
 		
@@ -21,6 +21,7 @@ public class FizzBuzzSolution {
 		if (number > 10 && isIdentical(numVal)) {
 			
 			isDeluxe = true;
+			isSingleVal = true;
 		}
 		
 		
@@ -28,32 +29,29 @@ public class FizzBuzzSolution {
         if ((number % 3 == 0) || (containsThree)) {
     		
     		result = "fizz";
-    		isThreeorFive = true;
+    		isSingleVal = true;
     	
         }
         
         else if ((number % 5 == 0) || (containsFive)) {
     		
     		result = "buzz";
-    		isThreeorFive = true;
+    		isSingleVal = true;
     	
         }
         
         result = getDlxFizzBuzzResult(number, isDeluxe, containsThree, containsFive);
         
         //To return the number itself
-        if (!isThreeorFive) {
+        if (!isSingleVal) {
 			
 			result = number.toString();
 		}
-        
        
-
-      
 		return result;
-		
 	}
 	
+	//Method to return the result for deluxe fizz buzz
 	private String getDlxFizzBuzzResult(Integer number, boolean isDeluxe, 
 			                            boolean containsThree, boolean containsFive) {
 		
@@ -61,7 +59,7 @@ public class FizzBuzzSolution {
 		
 		if (number % 3 == 0 && number % 5 == 0) {
 	        	
-	        	result = getResult(isDeluxe);
+        	result = getResult(isDeluxe);
 	    }
 	        
         if (number % 3 == 0 && containsFive) {
@@ -84,6 +82,24 @@ public class FizzBuzzSolution {
 	     
         return result;
 	        
+	}
+	
+	//Method to return "fizz buzz" or "fizz buzz deluxe"
+	private String getResult(boolean isDeluxe) {
+		
+		String result = "";
+		
+		if (isDeluxe) {
+			
+			result = "fizz buzz deluxe";
+		} 
+		else {
+			
+			result = "fizz buzz";
+		}
+		
+		return result;
+
 	}
 	
 	//Method to check if the string value contains the number 3 or 5
@@ -133,24 +149,6 @@ public class FizzBuzzSolution {
 		return isIdentical;
 	}
 	
-	//Method to return "fizz buzz" or "fizz buzz deluxe"
-	private String getResult(boolean isDeluxe) {
-		
-		String result = "";
-		
-		if (isDeluxe) {
-			
-			result = "fizz buzz deluxe";
-		} 
-		else {
-			
-			result = "fizz buzz";
-		}
-		
-		return result;
-
-	}
-	
 	
 	
 	
@@ -193,6 +191,3 @@ public class FizzBuzzSolution {
     */
 
 }
-
-
-
