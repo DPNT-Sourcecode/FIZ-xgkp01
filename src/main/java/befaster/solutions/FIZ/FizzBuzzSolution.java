@@ -24,13 +24,11 @@ public class FizzBuzzSolution {
 			if (number % 2 != 0) {
 				
 				deluxeResult.append(" fake deluxe");
-				//singleValResult.append("fake deluxe");
 				
 			} 
 			else {
 				
 				deluxeResult.append(" deluxe");
-				//singleValResult.append("deluxe");
 			}
 			
 			isSingleVal = true;
@@ -199,3 +197,4 @@ public class FizzBuzzSolution {
     */
 
 }
+
