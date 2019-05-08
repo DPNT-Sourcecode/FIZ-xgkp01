@@ -5,15 +5,18 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         
     	String result = "";
+    	boolean divThreeorFive = false;
     	
     	if (number % 3 == 0) {
     		
     		result = "fizz";
+    		divThreeorFive = true;
     		
     	}
     	else if (number % 5 == 0) {
     		
     		result = "buzz";
+    		divThreeorFive = true;
     		
     	}
     	
@@ -24,7 +27,11 @@ public class FizzBuzzSolution {
     	}
     	else {
     		
-    		result = number.toString();
+    		if (!divThreeorFive) {
+    			
+    			result = number.toString();
+    		}
+    		
     	}
     		
     	return result;
@@ -32,4 +39,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
