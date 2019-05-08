@@ -15,11 +15,6 @@ public class FizzBuzzSolution {
 		boolean containsFive = containsThreeOrFive(numVal, '5');
 		
 		
-		String s = numVal;
-		
-		
-		
-		
         if ((number % 3 == 0) || (containsThree)) {
     		
     		result = "fizz";
@@ -158,4 +153,5 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
