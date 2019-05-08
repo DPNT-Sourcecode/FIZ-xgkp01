@@ -15,6 +15,11 @@ public class FizzBuzzSolution {
 		boolean containsFive = containsThreeOrFive(numVal, '5');
 		
 		
+		String s = numVal;
+		
+		
+		
+		
         if ((number % 3 == 0) || (containsThree)) {
     		
     		result = "fizz";
@@ -40,16 +45,11 @@ public class FizzBuzzSolution {
         	result = "fizz buzz";
         }
         
-       
         	
         if (number % 5 == 0 && containsThree) {
         	
         	result = "fizz buzz";
         }	
-        
-       	
-        
-        
         
         
         if (containsThree && containsFive) {
@@ -87,6 +87,33 @@ public class FizzBuzzSolution {
 		}
 		
 		return containsVal;
+	}
+	
+	
+	//Method to check if the numbers are identical
+	private boolean isIdentical(String numVal) {
+		
+		boolean isIdentical = false;
+		
+		char ch = numVal.charAt(0);
+		
+		for (int j = 1; j < numVal.length(); j++) {
+			
+			char chr = numVal.charAt(j);
+			
+			if (ch == chr) {
+				
+				isIdentical = true;
+			} 
+			else {
+				
+				isIdentical = false;
+				break;
+			}
+			
+		}
+		
+		return isIdentical;
 	}
 	
 	
@@ -131,3 +158,4 @@ public class FizzBuzzSolution {
     */
 
 }
+
