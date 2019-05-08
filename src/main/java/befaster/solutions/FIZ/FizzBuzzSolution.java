@@ -30,20 +30,26 @@ public class FizzBuzzSolution {
         }
         
         
-        if ((number % 3 == 0 && number % 5 == 0) ||
-        	 (containsThree || containsFive)) {
+        if (number % 3 == 0 && number % 5 == 0) {
+        	
+        	result = "fizz buzz";
+        }
+        	
+        	
+        if (containsThree && containsFive) {
     		
     		result = "fizz buzz";
     		
     	}
-        else {
-    		
-			if (!isThreeorFive) {
+        
+        
+        
+        if (!isThreeorFive) {
 				
-				result = number.toString();
-			}
-        }
-		
+			result = number.toString();
+		}
+
+      
 		return result;
 		
 	}
@@ -110,6 +116,7 @@ public class FizzBuzzSolution {
     */
 
 }
+
 
 
 
